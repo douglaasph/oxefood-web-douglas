@@ -131,7 +131,10 @@ export default function ProdutoPage() {
             <dialog id="modal-detalhar" className="modal">
                 <div className="modal-box">   
                     <h3 className="font-bold text-lg">Dados do Produto</h3>
-                    <div className="divider" />
+                   <div className="divider" />
+                   <p className="py-4">
+                       <strong>Categoria:</strong> {produto.categoria.descricao}
+                   </p>
                     <p className="py-4"> 
                         <strong>Codigo:</strong> {produto.codigo}
                     </p>
