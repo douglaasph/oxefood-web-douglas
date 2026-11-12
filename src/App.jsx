@@ -1,7 +1,9 @@
 import Router from "./app/router";
+import { setupAxiosInterceptors } from './features/authentication/service/authenticationService';
 
 export default function App() {
-
- return <Router />;
+    setupAxiosInterceptors();
+    
+    return <Router />;
 
 }
